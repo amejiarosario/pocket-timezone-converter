@@ -1,5 +1,6 @@
 require 'sinatra'
 
-# get '/' do
-#   "Hello Word!"
-# end
+get '/' do
+   #redirect '/index.html'
+   File.new('public/index.html').readlines
+end
