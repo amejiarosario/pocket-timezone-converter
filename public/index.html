@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
+        </script>
+    </head>
+    <body>
+        <div data-role="page" id="page1">
+            <div data-theme="a" data-role="header">
+                <h4>
+                    Pocket Time Converter
+                </h4>
+            </div>
+            <div data-theme="a" data-role="header">
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        From:
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            #{fromCity}
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            #{fromTime}
+                        </a>
+                    </li>
+                </ul>
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        To:
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            #{toCity}
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            #{toTime}
+                        </a>
+                    </li>
+                </ul>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput2">
+                            Day
+                        </label>
+                        <input id="textinput2" placeholder="choose a day" value="" type="date" />
+                    </fieldset>
+                </div>
+                <img src="https://maps.googleapis.com/maps/api/staticmap?center=Boston, MA&amp;zoom=14&amp;size=288x100&amp;markers=Boston, MA&amp;sensor=false" width="288" height="100" />
+            </div>
+        </div>
+        <script>
+            //App custom javascript
+        </script>
+    </body>
+</html>
