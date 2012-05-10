@@ -7,34 +7,6 @@ describe("Player", function() {
     song = new Song();
   });
 
-  it("should load the libraries", function(){
-  	var tuMadrina;
-  	expect(player).toBeDefined();
-  	expect(song).toBeDefined();
-  	expect(timezoneJS).toBeDefined();
-  	expect($).toBeDefined();
-  	expect(tuMadrina).toBeUndefined();
-  });
-  
-  it("should have ajax available", function(){
-  	expect($.ajax).toBeDefined();
-  });
-  /*
-  it("should load the rules", function(){
-  	//timezoneJS.timezone.zoneFileBasePath = '/tz';
-  	//timezoneJS.timezone.init();
-  });
-  */
-
-it("has the right timezone offset for new york", function() {
-	timezoneJS.timezone.zoneFileBasePath = '/public/tz';
-  	timezoneJS.timezone.init({ async: false });
-	var nyc = new timezoneJS.Date(2012, 5, 14, 17, 30,'America/New_York');
-	var tz = nyc.getOffset();
-	expect(tz).toEqual(4);
-});
-
-
 
   it("should be able to play a Song", function() {
     player.play(song);
