@@ -11,8 +11,7 @@
 #   - dist/**/*.js
 #
 src_files:
-    - public/javascripts/vendors/date.js
-    - public/javascripts/vendors/jquery-1.7.2.min.js
+    - public/javascripts/**/*.js
 
 # stylesheets
 #
@@ -60,8 +59,12 @@ spec_files:
 #
 # src_dir: public
 #
+<<<<<<< HEAD
 src_dir:
   - public
+=======
+src_dir:  
+>>>>>>> example-test-passing
 
 # spec_dir
 #

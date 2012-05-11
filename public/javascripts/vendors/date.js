@@ -811,7 +811,6 @@ timezoneJS.timezone = new function() {
     return arr.sort();
   };
   this.parseZones = function(str) {
-  	//console.log(str); // TODO remove
     var s = '';
     var lines = str.split('\n');
     var arr = [];
