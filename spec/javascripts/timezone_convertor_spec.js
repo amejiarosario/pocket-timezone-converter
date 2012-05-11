@@ -48,8 +48,16 @@ describe("TimezoneConvertor", function() {
 	    });			
 		});
     
+    // time conversiont pluggin
     describe("time convertion", function() {
-      // TODO
+      it("should convert from nyc to la", function() {
+        var tzdt = nyc.convertTo('Asia/Tokyo');
+        expect(tzdt.toString()).toEqual(jp.toString());
+      });
+      it("should convert dates from ", function() {
+        
+      });
+      
     });
     		    
   });
