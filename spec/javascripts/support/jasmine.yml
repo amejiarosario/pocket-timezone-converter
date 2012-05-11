@@ -11,6 +11,8 @@
 #   - dist/**/*.js
 #
 src_files:
+    - public/javascripts/vendors/date.js
+    - public/javascripts/timezonejs_convertor.js
     - public/javascripts/**/*.js
 
 # stylesheets
